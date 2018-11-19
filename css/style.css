@@ -1,0 +1,30 @@
+body {
+	background-color: #bae9eb;
+}
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+.wide {
+	width:100%;
+}
+.logo {
+	margin: 15px 15px 15px 15px;
+	width: 155px;
+	height: 155px;
+	vertical-align:middle;
+}
+.item {
+	height: 185px;
+	color: white;
+	font-size: 60px;
+	margin-bottom: 5px;
+}
+.instagram {
+	background-color: #ae338b;
+}
+.facebook {
+	background-color: #3862b7;
+}
+.naver {
+	background-color: #09cd45;
+}
