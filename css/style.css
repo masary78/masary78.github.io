@@ -8,12 +8,13 @@ a:link, a:visited, a:hover, a:active {
 	width:100%;
 }
 .logo {
-	margin: 15px 15px 15px 15px;
+	margin: 15px 15px 15px 30px;
 	width: 155px;
 	height: 155px;
 	vertical-align:middle;
 }
 .item {
+	border-radius: 40px;
 	height: 185px;
 	color: white;
 	font-size: 60px;
