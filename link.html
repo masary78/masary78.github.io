@@ -12,11 +12,14 @@
 </script>
 <script>
 	var trackOutboundLink = function(url) {
-		ga('send', 'event', 'outbound', 'click', url, {
-			'transport': 'beacon',
-			'hitCallback': function(){document.location = url;}
-		});
-	}
+		gtag('event', 'click', {
+			'event_category': 'outbound',
+			'event_label': url,
+			'transport_type': 'beacon',
+			'event_callback': function(){document.location = url;}
+	});
+}
+
 </script>
 		<title>Dear Sweet Mochi</title>
 		<link rel="stylesheet" href="css/style.css">
@@ -24,21 +27,21 @@
 	<body>
 		<img src="img/main.png" alt="main image" class="wide">
 
-		<a href="https://www.instagram.com/masary78" onclick="trackOutboundLink('https://www.instagram.com/masary78');">
+		<a href="https://www.instagram.com/masary78" onclick="trackOutboundLink('https://www.instagram.com/masary78');return false;">
 			<div class="item instagram" >
 				<img src="img/instagram-logo.png" alt="instagram logo" class="logo">
 				<span>follow me</span>
 			</div>
 		</a>
 
-		<a href="https://www.facebook.com/dearsweetmochi" onclick="trackOutboundLink('https://www.facebook.com/dearsweetmochi');">
+		<a href="https://www.facebook.com/dearsweetmochi" onclick="trackOutboundLink('https://www.facebook.com/dearsweetmochi');return false;">
 			<div class="item facebook">
 				<img src="img/facebook-logo.png" alt="facebook logo" class="logo">
 				<span>be a fan</span>
 			</div>
 		</a>
 
-		<a href="https://blog.naver.com/masary78" onclick="trackOutboundLink('https://blog.naver.com/masary78');">
+		<a href="https://blog.naver.com/masary78" onclick="trackOutboundLink('https://blog.naver.com/masary78');return false;">
 			<div class="item naver">
 				<img src="img/naver-blog-logo.png" alt="naver blog logo" class="logo">
 				<span>my blog</span>
